@@ -68,7 +68,7 @@ Various ways to implement these
 	git branch --set-upstream-to origin/xyz
 	git pull origin xyz --allow-unrelated-histories
 	
-	#Make changes in your directory , add your code or update the existing files
+	Make changes in your directory , add your code or update the existing files
 	git status
 	git add . 
 	git commit -m "Commit message"
