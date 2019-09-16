@@ -34,23 +34,25 @@ Various ways to implement these
 	Create a new branch on github eg abc 
 	git fetch --all
 	git branch -a
-	# now you will be able to see the newly created branch
-	# In the above case you would created a new branch by cutting it from master  
-	# If you are cutting a new branch from any other branch then ensure that you are on the same branch from which you have cut the new branch
-	# For eg if abc is cut from master then on terminal be on master branch 
-	# Similarly if you have cut the branch from xyz then be on branch xyz in terminal
-	# If you haven't created the branch xyz ,then first track xyz 
+	'''
+	now you will be able to see the newly created branch
+	In the above case you would created a new branch by cutting it from master  
+	If you are cutting a new branch from any other branch then ensure that you are on the same branch from which you have cut the new branch
+	For eg if abc is cut from master then on terminal be on master branch 
+	Similarly if you have cut the branch from xyz then be on branch xyz in terminal
+	If you haven't created the branch xyz ,then first track xyz 
+	'''
 		Tracking xyz , being on master branch
 		git checkout -b xyz
 		git branch --set-upstream-to origin/xyz
 		git pull origin xyz --allow-unrelated-histories
 		
-	### creating a new branch abc being on the correct branch in terminal
+	'''creating a new branch abc being on the correct branch in terminal '''
 	git checkout -b xyz
 	git branch --set-upstream-to origin/xyz
 	git pull origin xyz --allow-unrelated-histories
 	
-	#Make changes in your directory , add your code or update the existing files
+	'''Make changes in your directory , add your code or update the existing files'''
 	git status
 	git add . 
 	git commit -m "Commit message"
