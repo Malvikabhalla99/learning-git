@@ -56,7 +56,38 @@ Various ways to implement these
 	git commit -m "Commit message"
 	git push 
 	
-
+3. Working on a repo in which your are a collaborator and updating your branch frequently and opening pull requests
+	Open terminal and go to the required folder
+	git init
+	cut a new branch for yourself in github
+	Create a new branch in local to track the remote branch
+	git checkout -b xyz
+	git branch --set-upstream-to origin/xyz
+	git pull origin xyz --allow-unrelated-histories
+	
+	#Make changes in your directory , add your code or update the existing files
+	git status
+	git add . 
+	git commit -m "Commit message"
+	git push 
+	
+4. Working on a repo in which you are not a collaborator and created your own copy and opened a pull request
+	Fork the repo 
+	Open terminal
+	git clone <Copy url for the project>
+	git remote add upstream <url of original project>
+	git fetch upstream  (this will fetch the master branch of upstream)
+	git branch --set-upstream-to=upstream/master master
+	git checkout -b newbranchname
+	make changes you want to make on this branch
+	git status
+	git add . 
+	git commit -m "Commit message"
+	git push origin <newbranchname>
+	git push -u origin <newbranchname>
+	after this we can use git push
+	
+	
 		
 		
 		
